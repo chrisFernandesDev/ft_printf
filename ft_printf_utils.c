@@ -3,7 +3,7 @@
 int	ft_putchar(char c)
 {
 	write(1, &c, 1);
-	return (1); //Retorno 1 porque retorna o numero de bytes
+	return (1);
 }
 
 int	ft_putstr(char *str)
@@ -12,12 +12,7 @@ int	ft_putstr(char *str)
 
 	i = 0;
 	if (str == NULL)
-	{
-	//verificar se posso retornar ft_putstr ou ft_putchar 
-		//ft_putchar("(null)");
-		return (ft_putstr("(null)"), 6);
-		//return (6); //retorno 6?
-	}
+		return (ft_putstr("(null)"));
 	while (str[i] != '\0')
 	{
 		ft_putchar(str[i]);

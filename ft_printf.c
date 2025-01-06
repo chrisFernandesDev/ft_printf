@@ -15,6 +15,8 @@ static int	ft_handleformat(const char specifier, va_list args)
 		printed += ft_putunsigned(va_arg(args, unsigned int));
 	else if (specifier == 'x' || specifier == 'X')
 		printed += ft_puthex(va_arg(args, unsigned int), specifier);
+	else if (specifier == 'p')
+		printed += ft_putptr(va_arg(args, void *));
 	else if (specifier == '%')
 		printed += ft_putchar('%');
 	return (printed);

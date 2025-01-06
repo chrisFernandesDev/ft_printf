@@ -10,6 +10,7 @@ int	ft_putstr(char *str);
 int	ft_putnbr(int n);
 int	ft_putunsigned(unsigned long nbr);
 int	ft_puthex(unsigned long long nbr, char define);
+int	ft_putptr(void *ptr);
 int	ft_printf(const char *str, ...);
 
 #endif
