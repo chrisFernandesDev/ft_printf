@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_printf.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: cmaciel- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/01/07 09:56:31 by cmaciel-          #+#    #+#             */
+/*   Updated: 2025/01/07 09:56:31 by cmaciel-         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "ft_printf.h"
 
 static int	ft_handleformat(const char specifier, va_list args)
@@ -27,7 +39,7 @@ int	ft_printf(const char *str, ...)
 	va_list	args;
 	int		i;
 	int		full_print;
-	
+
 	va_start(args, str);
 	full_print = 0;
 	i = 0;
